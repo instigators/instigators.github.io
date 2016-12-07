@@ -1,0 +1,54 @@
+// main: main.less
+
+.landing {
+    background: url("/assets/images/dark_geometric.png");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .content-container {
+        width: 100%;
+        flex: 1;
+        z-index: 1;
+
+        .text {
+
+            >h1 {
+                color: white;
+                font-size: 6em;
+                font-family: 'Roboto Condensed';
+                font-weight: 400;
+                margin: 0;
+            }
+
+            h2 {
+                color: #666;
+                font-size: 2em;
+                font-weight: 300;
+                font-family: 'Roboto';
+                margin-left: 5px;
+                margin: 0;
+                margin-top: @margin-base;
+            }
+
+            p {
+                margin-top: 0;
+                a {
+                    text-decoration: none;
+
+                    span {
+                        font-size: 1.1em;
+                        font-weight: 100;
+                        color: #C4970E;
+                    }
+                }
+            }
+        }
+    }
+
+    canvas {
+        position: absolute;
+        z-index: 0
+    }
+}

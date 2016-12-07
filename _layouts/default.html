@@ -8,28 +8,26 @@
 
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta property="og:image" content="http://i.imgur.com/xVG9bL3.png" />
+	<meta property="og:description" content="Let's get you started." />
 
     <!-- <link rel="stylesheet" href="/assets/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/assets/font-awesome.min.css"> -->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/site-main.css">
-
-    <link rel="canonical" href="http://localhost:4000/">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300" rel="stylesheet"> -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
 </head>
 <body>
 
-    {% include site-header.html %}
-
     {{ content }}
 
-    {% include footer.html %}
-
     <script src="/assets/js/jquery.min.js" charset="utf-8"></script>
-    <script src="/assets/js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="/assets/js/slick.min.js" charset="utf-8"></script>
+    <script src="/assets/js/birdman.js" charset="utf-8"></script>
+    <script src="/assets/js/particles.js" charset="utf-8"></script>
     <script src="/assets/js/main.js" charset="utf-8"></script>
 </body>
 </html>
